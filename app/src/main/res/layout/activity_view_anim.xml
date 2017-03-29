@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiao.animationsummary.ViewAnimActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickToAlpha"
+            android:text="渐变"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:onClick="clickToRotate"
+            android:text="旋转"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:onClick="clickToScale"
+            android:text="缩放"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:onClick="clickToTranslate"
+            android:text="平移"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:onClick="clickToSet"
+            android:text="组合"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_target"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:background="@drawable/girl"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

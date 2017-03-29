@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+<item android:drawable="@drawable/ic_fingerprint_0" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_1" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_2" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_3" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_4" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_5" android:duration="100"/>
+<item android:drawable="@drawable/ic_fingerprint_6" android:duration="100"/>
+</animation-list>

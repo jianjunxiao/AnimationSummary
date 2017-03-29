@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiao.animationsummary.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/btn_view_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View动画"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_property_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="属性动画"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_frame_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="帧动画"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_type_evaluator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TypeEvaluator"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_layoutanimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LayoutAnimation"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_layout_transition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LayoutTransition"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_activity_anim_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="转场动画（Android5.0之前）"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <Button
+            android:id="@+id/btn_activity_anim_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="转场动画（Android5.0之后）"
+            android:textColor="@android:color/holo_green_dark"/>
+    </LinearLayout>
+</ScrollView>

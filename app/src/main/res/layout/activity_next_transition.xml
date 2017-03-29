@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xiao.animationsummary.NextTransitionActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/girl"
+        android:transitionName="shareView_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:transitionName="shareView_name"
+        android:text="赵丽颖"
+        android:textColor="#353535"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"
+        android:text="@string/info"
+        android:textColor="#666666"
+        android:textSize="16sp"/>
+</LinearLayout>

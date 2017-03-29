@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.xiao.animationsummary.LayoutAnimationActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="addData"
+        android:text="显示数据"
+        android:textSize="14sp"/>
+
+    <ListView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f1f1f1"
+        android:dividerHeight="1dp"
+        android:layoutAnimation="@anim/layout_anim"
+        android:listSelector="?android:attr/selectableItemBackground"/>
+</LinearLayout>
