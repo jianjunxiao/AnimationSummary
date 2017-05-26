@@ -42,39 +42,38 @@ public class TransitionActivity extends AppCompatActivity implements AdapterView
         adapter.addData(stars);
     }
 
-public void explode(View view) {
-    Intent intent = new Intent(this, NextTransitionActivity.class);
-    intent.putExtra("flag", "explode");
-    startActivity(intent,
-            ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-}
+    public void explode(View view) {
+        Intent intent = new Intent(this, NextTransitionActivity.class);
+        intent.putExtra("flag", "explode");
+        startActivity(intent,
+                ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
 
-public void slide(View view) {
-    Intent intent = new Intent(this, NextTransitionActivity.class);
-    intent.putExtra("flag", "slide");
-    startActivity(intent,
-            ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-}
+    public void slide(View view) {
+        Intent intent = new Intent(this, NextTransitionActivity.class);
+        intent.putExtra("flag", "slide");
+        startActivity(intent,
+                ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
 
-public void fade(View view) {
-    Intent intent = new Intent(this, NextTransitionActivity.class);
-    intent.putExtra("flag", "fade");
-    startActivity(intent,
-            ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
-}
+    public void fade(View view) {
+        Intent intent = new Intent(this, NextTransitionActivity.class);
+        intent.putExtra("flag", "fade");
+        startActivity(intent,
+                ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
 
 
-@Override
-public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    TransitionAdapter.TransitionViewHolder holder = (TransitionAdapter.TransitionViewHolder) view.getTag();
-    View shareViewImg = holder.civImg;
-    View shareViewName = holder.tvName;
-    Intent intent = new Intent(this, NextTransitionActivity.class);
-    intent.putExtra("flag", "share");
-    startActivity(intent, ActivityOptionsCompat
-            .makeSceneTransitionAnimation(this,
-                    Pair.create(shareViewImg, "shareView_img"),
-                    Pair.create(shareViewName, "shareView_name"))
-            .toBundle());
-}
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        TransitionAdapter.TransitionViewHolder holder = (TransitionAdapter.TransitionViewHolder) view.getTag();
+        View shareViewImg = holder.civImg;
+        View shareViewName = holder.tvName;
+        Intent intent = new Intent(this, NextTransitionActivity.class);
+        intent.putExtra("flag", "share");
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this,
+                Pair.create(shareViewImg, "shareView_img"),
+                Pair.create(shareViewName, "shareView_name"))
+                .toBundle());
+    }
 }
