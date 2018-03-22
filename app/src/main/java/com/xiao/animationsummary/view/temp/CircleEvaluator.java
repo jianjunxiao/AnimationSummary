@@ -8,6 +8,13 @@ import android.graphics.Color;
  */
 
 public class CircleEvaluator implements TypeEvaluator<Circle> {
+
+    private Circle mCircle;
+
+    public CircleEvaluator() {
+        mCircle = new Circle();
+    }
+
     @Override
     public Circle evaluate(float fraction, Circle startValue, Circle endValue) {
 
@@ -31,6 +38,11 @@ public class CircleEvaluator implements TypeEvaluator<Circle> {
         int startElevation = startValue.getElevation();
         int endElevation = endValue.getElevation();
         int elevation = (int) (startElevation + fraction * (endElevation - startElevation));
-        return new Circle(raduis, color, elevation);
+
+        mCircle.setRaduis(raduis);
+        mCircle.setColor(color);
+        mCircle.setElevation(elevation);
+
+        return mCircle;
     }
 }

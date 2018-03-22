@@ -16,6 +16,10 @@ public class Circle {
         this.elevation = elevation;
     }
 
+    public Circle() {
+
+    }
+
     public int getRaduis() {
         return raduis;
     }

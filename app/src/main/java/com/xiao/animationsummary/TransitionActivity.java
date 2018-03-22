@@ -8,7 +8,9 @@ import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.xiao.animationsummary.adapter.TransitionAdapter;
 import com.xiao.animationsummary.bean.Star;
@@ -71,9 +73,11 @@ public class TransitionActivity extends AppCompatActivity implements AdapterView
         View shareViewName = holder.tvName;
         Intent intent = new Intent(this, NextTransitionActivity.class);
         intent.putExtra("flag", "share");
+        Pair<View,String> pair1 =  Pair.create(shareViewImg, "shareView_img");
+        Pair<View,String> pair2 =  Pair.create(shareViewName, "shareView_img");
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this,
-                Pair.create(shareViewImg, "shareView_img"),
-                Pair.create(shareViewName, "shareView_name"))
+                pair1,
+                pair2)
                 .toBundle());
     }
 }
